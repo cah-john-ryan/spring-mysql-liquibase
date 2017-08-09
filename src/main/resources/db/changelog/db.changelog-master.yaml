@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: db/changelog/1.0.0.0/initial_setup.yaml
+  - include:
+      file: db/changelog/1.0.0.0/insert_initial_user_data.yaml

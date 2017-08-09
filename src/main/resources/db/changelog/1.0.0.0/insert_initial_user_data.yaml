@@ -1,0 +1,13 @@
+databaseChangeLog:
+- changeSet:
+    id: 1502313904747-1
+    author: john.ryan01
+    changes:
+    - sqlFile:
+        dbms: mysql
+        encoding: utf8
+        endDelimiter: \nGO
+        path: insert_initial_user_data.sql
+        relativeToChangelogFile: true
+        splitStatements: true
+        stripComments: true
