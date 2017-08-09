@@ -28,6 +28,8 @@ dependencies {
     // Use MySQL Connector-J
     compile 'mysql:mysql-connector-java'
 
+    compile 'org.liquibase:liquibase-core'
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
     testCompile group: 'junit', name: 'junit', version: '4.12'

@@ -1,0 +1,27 @@
+databaseChangeLog:
+- changeSet:
+    id: 1502309847483-1
+    author: john.ryan01 (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            name: id
+            type: INT
+        - column:
+            name: email
+            type: VARCHAR(255)
+        - column:
+            name: name
+            type: VARCHAR(255)
+        tableName: user
+    - addPrimaryKey:
+        columnNames: id
+        constraintName: pk_user_id
+        tableName: user
+    - addAutoIncrement:
+        columnDataType: INT
+        columnName: id
+        incrementBy: 1
+        tableName: user
+
